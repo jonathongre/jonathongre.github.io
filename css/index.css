@@ -208,7 +208,6 @@ a:hover {
 }
 footer {
   height: 80px;
-  margin-top: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -232,6 +231,7 @@ footer a:hover {
 footer span {
   font-size: 2rem;
   color: #FFFFFF;
+  padding: 0 20px;
 }
 @media (max-width: 500px) {
   footer span {
@@ -244,6 +244,10 @@ footer span {
   background-image: url(../img/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
   background-position: center;
   background-size: cover;
+}
+.title .title-container {
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   align-content: center;
@@ -266,6 +270,7 @@ footer span {
 .title .title-button {
   height: 40px;
   width: 150px;
+  margin: 20px 0;
   font-size: 2rem;
   border: 2px solid #9DB5B2;
   border-radius: 5px;
@@ -295,6 +300,7 @@ footer span {
 }
 .section .box {
   padding: 40px;
+  justify-content: center;
 }
 .section .box .box-title {
   font-size: 24px;
@@ -307,6 +313,7 @@ footer span {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 @media (max-width: 500px) {
   .tabs {
@@ -314,11 +321,9 @@ footer span {
   }
 }
 .tabs .tabs-items {
-  width: 75%;
-  height: 300px;
-  display: flex;
-  justify-content: center;
-  padding-top: 60px;
+  width: 40%;
+  height: auto;
+  padding: 60px 0;
 }
 .tabs .tabs-item {
   display: none;
@@ -387,6 +392,8 @@ footer span {
 .about-title {
   display: flex;
   justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
 }
 .about-title p {
   font-size: 3rem;
@@ -401,6 +408,7 @@ footer span {
   display: flex;
   flex-wrap: wrap;
   align-content: center;
+  padding-bottom: 40px;
 }
 .about-content .about-box {
   height: 420px;
