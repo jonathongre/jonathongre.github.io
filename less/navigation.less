@@ -1,0 +1,50 @@
+.navigation {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #3B413C;
+
+
+
+    h1 {
+        color: #DAF0EE;
+    }
+
+    .logo {
+        font-size: 4rem;
+    }
+
+    .nav-links {
+        padding-top: 20px;
+        align-content: space-between;
+
+        @media @phone {
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+    }
+}
+
+a {
+    .navStyle(#DAF0EE);
+    text-decoration: none;
+    padding: 0 20px;
+    transition: all 0.5s ease;
+
+    &:hover {
+        color: @cambridgeBlue;
+    }
+
+    @media @phone {
+        padding-top: 20px;
+    }
+}
+
+.feat-link {
+    @media @phone {
+        display: none;
+    }
+}

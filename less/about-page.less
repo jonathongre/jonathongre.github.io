@@ -1,0 +1,70 @@
+.aboutPage {
+    background: linear-gradient(to bottom, #9DB5B2 0%, #DAF0EE 100%);
+}
+
+.nav-links {
+    #aboutLink {
+        display: none;
+    }
+
+    #featLink {
+        display: none;
+    }
+}
+
+.about-title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+
+    p {
+        font-size: 3rem;
+        font-weight: bold;
+        padding-top: 20px;
+        color: @white;
+        text-shadow: 1px 1px #3B413C;
+    }
+}
+
+.about-content {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    padding-bottom: 40px;
+
+    .about-box {
+        height: 420px;
+        margin: auto;
+        margin-top: 40px;
+        font-size: 1.8rem;
+        color: white;
+        text-shadow: 1px 1px #3B413C;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 2px solid black;
+        background: #94D1BE;
+        box-shadow: 4px 4px 10px #000;
+
+        img {
+            height: 300px;
+            width: 300px;
+        }
+
+        span {
+
+            padding: 20px 0;
+        }
+
+        .zocial {
+            box-shadow: 0 1px 10px #000;
+
+            &:hover {
+                box-shadow: 1px 1px 10px #fff;
+            }
+        }
+    }
+}

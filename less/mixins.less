@@ -1,0 +1,29 @@
+.btnStyle (@height, @width, @fntSz, @fntClr, @bkgClr, @brdRad) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: @fntSz;
+    font-weight: bold;
+    color: @fntClr;
+    height: @height;
+    width: @width;
+    background: @bkgClr;
+    border-radius: @brdRad;
+
+    &:hover {
+        background: lighten(@river-bend, 20%);
+    }
+}
+
+.imgSize (@width, @height, @brdRad) {
+    width: @width;
+    height: @height;
+    border-radius: @brdRad;
+
+}
+
+.navStyle (@color) {
+    font-weight: bold;
+    color: @color;
+    text-decoration: none;
+}
