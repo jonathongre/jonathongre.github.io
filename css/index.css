@@ -134,7 +134,7 @@ html {
 }
 html,
 body {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Righteous', cursive;
   color: #3B413C;
 }
 h1,
@@ -142,7 +142,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Russo One', sans-serif;
+  font-family: 'Righteous', cursive;
   color: #3B413C;
 }
 h1 {
@@ -173,7 +173,7 @@ a {
   color: #DAF0EE;
 }
 .navigation .logo {
-  font-size: 4rem;
+  font-size: 4.5rem;
 }
 .navigation .nav-links {
   padding-top: 20px;
@@ -198,7 +198,7 @@ a:hover {
 }
 @media (max-width: 500px) {
   a {
-    padding-top: 20px;
+    padding: 20px 0;
   }
 }
 @media (max-width: 500px) {
@@ -340,18 +340,21 @@ footer span {
   display: none;
   height: auto;
   width: 100%;
-  box-shadow: 2px 2px 10px #9b9b9b;
+  background: transparent;
+  color: #3B413C;
 }
 .tabs .tabs-item .tabs-item-title {
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: bold;
   padding-bottom: 10px;
-  background-color: #FFFFFF;
 }
 .tabs .tabs-item-selected {
   display: block;
-  background-color: #FFFFFF;
-  font-size: 2rem;
+  background-color: transparent;
+  font-size: 2.4rem;
+  color: #3B413C;
+  text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.5);
+  background-clip: text;
 }
 .tabs .tabs-links {
   display: flex;
