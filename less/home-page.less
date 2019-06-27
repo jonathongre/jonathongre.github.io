@@ -1,7 +1,7 @@
 .title {
     width: 100%;
     height: 750px;
-    background-image: url(../img/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+    background-image: url(../img/food-icons.png);
     background-position: center;
     background-size: cover;
 
@@ -15,41 +15,58 @@
     }
 
     h1 {
-        font-size: 5rem;
-        color: @white;
+        font-size: 6rem;
+        color: @cambridgeBlue;
         font-weight: bold;
-        text-shadow: 2px 2px #000;
-        padding-top: 100px;
+        text-shadow: 2px 2px 3px #000;
+        padding-top: 180px;
         padding-bottom: 30px;
     }
 
     h4 {
-        color: @azureishWhite;
-        text-shadow: 2px 2px #000;
-        font-size: 2rem;
-        padding-bottom: 50px;
+        color: @cambridgeBlue;
+        text-shadow: 2px 2px 3px #000;
+        font-size: 2.5rem;
+        padding: 40px 0;
+
     }
 
-    .title-button {
-        height: 40px;
-        width: 150px;
-        margin: 20px 0;
-        font-size: 2rem;
-        cursor: pointer;
-        border: 2px solid @cambridgeBlue;
-        border-radius: 5px;
-        color: @white;
-        background-color: @cambridgeBlue;
-        text-decoration: none;
-        box-shadow: 4px 4px #000;
-
-        &:hover {
-            opacity: 0.8;
+    .buttons {
+        @media @phone {
+            display: flex;
+            flex-direction: column;
         }
 
-        &:active {
-            box-shadow: 2px 2px #000;
-            transform: translateY(2px);
+
+        .title-button {
+            height: 40px;
+            width: 150px;
+            margin: 20px 20px;
+            font-size: 2rem;
+            cursor: pointer;
+            border: 2px solid @cambridgeBlue;
+            border-radius: 5px;
+            color: @white;
+            background-color: @cambridgeBlue;
+            text-decoration: none;
+            box-shadow: 4px 4px #000;
+
+            &:hover {
+                opacity: 0.8;
+            }
+
+            &:active {
+                box-shadow: 2px 2px #000;
+                transform: translateY(2px);
+            }
+
+
+            a {
+                color: @white;
+                font-size: 2rem;
+                text-decoration: none;
+            }
+
         }
     }
 
@@ -71,7 +88,7 @@
         justify-content: center;
 
         .box-title {
-            font-size: 24px;
+            font-size: 2.4rem;
             padding-bottom: 10px;
             font-weight: bold;
         }
@@ -104,20 +121,23 @@
         display: none;
         height: auto;
         width: 100%;
-        box-shadow: 2px 2px 10px #9b9b9b;
+        background: transparent;
+        color: @blackOlive;
 
         .tabs-item-title {
-            font-size: 24px;
+            font-size: 2.4rem;
             font-weight: bold;
             padding-bottom: 10px;
-            background-color: #FFFFFF;
         }
     }
 
     .tabs-item-selected {
         display: block;
-        background-color: #FFFFFF;
-        font-size: 2rem;
+        background-color: transparent;
+        font-size: 2.4rem;
+        color: @blackOlive;
+        text-shadow: 2px 2px 3px #9a9a9a;
+        background-clip: text;
     }
 
     .tabs-links {
